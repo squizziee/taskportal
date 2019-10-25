@@ -1,0 +1,207 @@
+body {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+main {
+    width: 100%;
+    max-width: 1000px;
+    height: 500px;
+    border-radius: 15px;
+    background: #fff;
+}
+
+.faculty-list {
+    display: flex;
+    width: 100%;
+}
+
+.faculty {
+    position: relative;
+    width: calc(100% / 3);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, .03);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s background ease-in-out;
+    overflow: hidden;
+}
+
+.faculty::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 100%;
+    height: 5px;
+    background: #fa453c;
+    transition: 0.15s bottom ease;
+}
+
+.faculty:hover::after {
+    bottom: 0;
+}
+
+.user-greeting {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: ProximaNova, sans-serif;
+    text-align: center;
+    font-size: 15.5px;
+    height: calc(100% - 50px);
+}
+
+.user-greeting p {
+    margin: 10px 0;
+    max-width: 800px;
+}
+
+.user-greeting ul {
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.user-greeting ul li {
+    margin: 10px;
+}
+
+.logo {
+    margin-bottom: 50px;
+    width: 100px;
+    margin: 20px;
+    position: absolute;
+}
+
+.emph {
+    color: #fa453c;
+}
+
+.faculty-header {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, .03);
+    text-transform: uppercase;
+}
+
+.default-btn {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 130px;
+    font-family: ProximaNova;
+    margin-top: 30px;
+    background: #fa453c;
+    color: #fff;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.default-btn:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+}
+
+.redirectable-link {
+    transition: 0.2s ease-in-out;
+}
+
+.redirectable-link:hover {
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 130px;
+    font-family: ProximaNova;
+    margin-top: 30px;
+    background: #fa453c;
+    color: #fff;
+    border-radius: 2.5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    padding: 7.5px 15px;
+}
+
+.redirectable-link:hover .emph {
+    color: #fff;
+}
+
+.home-btn {
+    position: absolute;
+    z-index: 100;
+    width: 12.5px;
+    height: 12.5px;
+    border-radius: 50%;
+    background: #cb2d3e;
+    top: 25px;
+    left: 25px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.home-btn:nth-child(2) {
+    left: 45px;
+    background: #DD3A3C;
+}
+
+.home-btn:nth-child(3) {
+    left: 65px;
+    background: #ef473a;
+}
+
+.controls {
+    height: 50px;
+    top: -70px;
+    background: #fff;
+    z-index: 100;
+    width: 100%;
+    max-width: 1000px;
+}
+
+.central {
+    position: absolute;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, .1);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+}

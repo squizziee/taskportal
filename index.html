@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <img class="logo" src="img/logo.png" alt="Itlandia logo">
+    <img class="logo" src="img/logo.png" alt="Itlandia logo" class="animated jello">
     <div class="central">
         <section class="controls">
             <a href="index.html" class="home-btn"></a>
@@ -55,10 +55,18 @@
             </section>
             <main class="modal">
                 <section class="faculty-header">
-                    Регистрация и вход
+                    Подтверждение
                 </section>
-                <section class="user-greeting">
-
+                <section class="user-greeting user-register">
+                    <form>
+                        <input required type="text" placeholder="Номер группы обучения, например J4-F18-2"
+                            class="register-input">
+                        <input required type="text" placeholder="ФИО" class="register-input">
+                        <input type="submit" value="Отправить" class="submit-btn">
+                    </form>
+                    <span class="small-sign">
+                        Не являеетесь студентом <span class="emph">Айтиландии</span>? Вам <a href="#">сюда</a>.
+                    </span>
                 </section>
             </main>
         </div>

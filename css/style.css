@@ -239,3 +239,54 @@ main {
     opacity: 0;
     pointer-events: none;
 }
+
+.user-register {
+    display: block;
+    text-align: left;
+    height: 350px;
+    position: relative;
+}
+
+.register-input {
+    display: block;
+    outline: none;
+    border: none;
+    border-bottom: 0.5px solid rgba(0, 0, 0, .03);
+    height: 50px;
+    width: 100%;
+    padding-left: 20px;
+    font-family: ProximaNova, sans-serif;
+}
+
+.submit-btn {
+    border: none;
+    outline: none;
+    background: #fa453c;
+    color: #fff;
+    font-family: ProximaNova, sans-serif;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s all ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #fff;
+    color: #000;
+}
+
+.small-sign {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+    color: rgba(0, 0, 0, .3);
+    font-size: 12px;
+}
+
+.small-sign a {
+    color: #fa453c;
+}

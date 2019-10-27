@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
@@ -18,18 +19,18 @@
     <div class="central">
         <section class="controls">
             <a href="index.html" class="home-btn"></a>
-            <a class="home-btn close-btn"></a>
+            <a class="home-btn"></a>
             <a class="home-btn expand-btn"></a>
         </section>
         <main>
             <section class="faculty-list">
-                <a href="kids_faculty.html" class="faculty">
+                <a class="faculty" onclick="callModal()">
                     Kids
                 </a>
-                <a href="teen_faculty.html" class="faculty">
+                <a class="faculty" onclick="callModal()">
                     Teen
                 </a>
-                <a href="jun_faculty.html" class="faculty">
+                <a class="faculty" onclick="callModal()">
                     Jun
                 </a>
             </section>
@@ -47,7 +48,24 @@
             </section>
         </main>
     </div>
+    <div class="modal-bg modal-bg-hidden">
+        <div class="central modal-central animated ">
+            <section class="controls">
+                <a class="home-btn close-btn"></a>
+            </section>
+            <main class="modal">
+                <section class="faculty-header">
+                    Регистрация и вход
+                </section>
+                <section class="user-greeting">
+
+                </section>
+            </main>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>

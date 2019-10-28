@@ -18,19 +18,19 @@
     <img class="logo" src="img/logo.png" alt="Itlandia logo" class="animated jello">
     <div class="central">
         <section class="controls">
-            <a href="index.html" class="home-btn"></a>
+            <a title="На главную" href="index.html" class="home-btn"></a>
             <a class="home-btn"></a>
-            <a class="home-btn expand-btn"></a>
+            <a title="На весь экран" class="home-btn expand-btn"></a>
         </section>
         <main>
             <section class="faculty-list">
-                <a class="faculty" onclick="callModal()">
+                <a href="kids_faculty.html" class="faculty">
                     Kids
                 </a>
-                <a class="faculty" onclick="callModal()">
+                <a href="teen_faculty.html" class="faculty">
                     Teen
                 </a>
-                <a class="faculty" onclick="callModal()">
+                <a href="jun_faculty.html" class="faculty">
                     Jun
                 </a>
             </section>
@@ -48,32 +48,8 @@
             </section>
         </main>
     </div>
-    <div class="modal-bg modal-bg-hidden">
-        <div class="central modal-central animated ">
-            <section class="controls">
-                <a class="home-btn close-btn"></a>
-            </section>
-            <main class="modal">
-                <section class="faculty-header">
-                    Подтверждение
-                </section>
-                <section class="user-greeting user-register">
-                    <form>
-                        <input required type="text" placeholder="Номер группы обучения, например J4-F18-2"
-                            class="register-input">
-                        <input required type="text" placeholder="ФИО" class="register-input">
-                        <input type="submit" value="Отправить" class="submit-btn">
-                    </form>
-                    <span class="small-sign">
-                        Не являеетесь студентом <span class="emph">Айтиландии</span>? Вам <a href="#">сюда</a>.
-                    </span>
-                </section>
-            </main>
-        </div>
-    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/modal.js"></script>
 </body>
 
 </html>

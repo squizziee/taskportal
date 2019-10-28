@@ -8,3 +8,8 @@ expandBtn.addEventListener("click", function () {
         }
     }
 });
+
+$(".redirectable-link").click(function() {
+    $(this).toggleClass("animated");
+    $(this).toggleClass("flash");
+});

@@ -10,6 +10,10 @@ expandBtn.addEventListener("click", function () {
 });
 
 $(".redirectable-link").click(function() {
-    $(this).toggleClass("animated");
-    $(this).toggleClass("flash");
+    $(this).addClass("animated");
+    $(this).addClass("flash");
+    setTimeout(function(){
+        $(this).removeClass("animated");
+        $(this).removeClass("flash");
+    }, 1000);
 });
